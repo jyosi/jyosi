@@ -87,7 +87,7 @@ export default function HeroSection() {
               {[
                 { value: "100+", label: "Products" },
                 { value: "10", label: "Specialties" },
-                { value: "Pan India", label: "Reach" },
+                { value: "Global", label: "Reach" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center lg:text-left">
                   <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0057B8]">{stat.value}</p>
@@ -143,7 +143,7 @@ export default function HeroSection() {
                 ✓ ISO 9001:2015
               </div>
               <div className="px-3 py-1.5 rounded-full bg-white border border-gray-100 shadow-sm text-[11px] font-medium text-[#0057B8]">
-                ✓ Pan-India Distribution
+                ✓ Global Distribution
               </div>
             </div>
           </motion.div>

@@ -15,7 +15,7 @@ const recentInquiries = [
   { name: "Dr. Ramesh Kumar", type: "Product Inquiry", product: "NEURORYL-FORTE", date: "2 hours ago" },
   { name: "MedPlus Pharmacy", type: "Distribution", product: "General", date: "5 hours ago" },
   { name: "Dr. Priya Sharma", type: "Brand Inquiry", product: "JYSPRO-DF", date: "1 day ago" },
-  { name: "LifeCare Distributors", type: "Partnership", product: "Pan-India", date: "2 days ago" },
+  { name: "LifeCare Distributors", type: "Partnership", product: "Global", date: "2 days ago" },
 ];
 
 export default function AdminDashboard() {

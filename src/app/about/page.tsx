@@ -7,7 +7,7 @@ const timeline = [
   { year: "Founded", event: "JYOSI Pharmaceuticals established in Hyderabad with a vision to provide quality healthcare." },
   { year: "Growth", event: "Expanded product portfolio to 100+ products across multiple therapeutic areas." },
   { year: "Certification", event: "Achieved WHO-GMP and ISO 9001:2015 certifications for manufacturing excellence." },
-  { year: "Expansion", event: "Launched flagship brands RNA+, JYSPRO-DF and expanded Pan-India distribution." },
+  { year: "Expansion", event: "Launched flagship brands RNA+, JYSPRO-DF and expanded global distribution." },
   { year: "Present", event: "500+ products across 12 therapeutic areas serving healthcare needs nationwide." },
 ];
 

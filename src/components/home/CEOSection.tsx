@@ -5,48 +5,71 @@ import { Quote } from "lucide-react";
 
 export default function CEOSection() {
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-[#F8FAFF]">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6">
+    <section className="py-16 sm:py-20 bg-gradient-to-b from-white to-[#F8FAFF]">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="relative rounded-3xl overflow-hidden"
+          className="text-center mb-10"
         >
-          {/* Background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0A2540] to-[#0057B8]" />
-          <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '24px 24px' }} />
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0A2540]">Our Leadership</h2>
+        </motion.div>
 
-          <div className="relative p-8 sm:p-10 md:p-14 lg:p-16">
-            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-              {/* CEO Avatar */}
-              <div className="shrink-0">
-                <div className="relative">
-                  <div className="w-28 h-28 md:w-36 md:h-36 rounded-full bg-gradient-to-br from-[#00A7C4] to-[#00D1B2] flex items-center justify-center shadow-xl shadow-[#00A7C4]/20">
-                    <span className="text-white text-3xl md:text-4xl font-bold">BJ</span>
-                  </div>
-                  {/* Ring accent */}
-                  <div className="absolute inset-0 rounded-full border-2 border-white/20 scale-110" />
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
+          {/* CEO - B. Jyothi */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="relative rounded-2xl sm:rounded-3xl bg-white border border-gray-100 shadow-xl overflow-hidden"
+          >
+            <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#0057B8] to-[#00A7C4]" />
+            <div className="p-6 sm:p-8">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-[#0057B8] to-[#00A7C4] flex items-center justify-center mb-4">
+                  <span className="text-white text-2xl sm:text-3xl font-bold">BJ</span>
                 </div>
-              </div>
-
-              {/* Message */}
-              <div className="text-center md:text-left flex-1">
-                <Quote size={28} className="text-[#00D1B2]/40 mb-4 mx-auto md:mx-0" />
-                <blockquote className="text-base md:text-lg text-white/85 italic leading-relaxed mb-6">
-                  &ldquo;At JYOSI Pharmaceuticals, we are committed to making quality healthcare 
-                  accessible to all. As makers of RNA+, our focus remains on innovation, 
-                  integrity, and delivering trusted pharmaceutical solutions that improve 
-                  lives across India.&rdquo;
+                <Quote size={24} className="text-[#0057B8]/20 mb-3" />
+                <blockquote className="text-sm sm:text-base text-gray-600 italic leading-relaxed mb-5">
+                  &ldquo;Quality healthcare is a fundamental right. We are committed to 
+                  innovation, integrity, and delivering trusted pharmaceutical solutions 
+                  that improve lives.&rdquo;
                 </blockquote>
-                <div>
-                  <p className="text-xl font-bold text-white">B. Jyothi</p>
-                  <p className="text-sm text-[#00D1B2] font-medium mt-1">CEO & Founder, JYOSI Pharmaceuticals</p>
-                </div>
+                <p className="text-lg sm:text-xl font-bold text-[#0A2540]">B. Jyothi</p>
+                <p className="text-sm text-[#0057B8] font-medium">CEO & Founder</p>
+                <p className="text-xs text-gray-400 mt-2">📞 +91 7675903022</p>
               </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+
+          {/* MD - B. Murali */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="relative rounded-2xl sm:rounded-3xl bg-white border border-gray-100 shadow-xl overflow-hidden"
+          >
+            <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#00A7C4] to-[#00D1B2]" />
+            <div className="p-6 sm:p-8">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-[#00A7C4] to-[#00D1B2] flex items-center justify-center mb-4">
+                  <span className="text-white text-2xl sm:text-3xl font-bold">BM</span>
+                </div>
+                <Quote size={24} className="text-[#00A7C4]/20 mb-3" />
+                <blockquote className="text-sm sm:text-base text-gray-600 italic leading-relaxed mb-5">
+                  &ldquo;Our vision is to build a globally recognized pharmaceutical company 
+                  delivering affordable and accessible healthcare solutions to every 
+                  community.&rdquo;
+                </blockquote>
+                <p className="text-lg sm:text-xl font-bold text-[#0A2540]">B. Murali</p>
+                <p className="text-sm text-[#00A7C4] font-medium">Managing Director</p>
+                <p className="text-xs text-gray-400 mt-2">📞 +91 6300650229</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

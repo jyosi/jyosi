@@ -27,6 +27,10 @@ export default function Header() {
               <Phone size={14} />
               <span>{COMPANY.phone}</span>
             </a>
+            <a href={`tel:${COMPANY.phone2}`} className="flex items-center gap-2 hover:text-[#00D1B2] transition-colors">
+              <Phone size={14} />
+              <span>{COMPANY.phone2}</span>
+            </a>
             <a href={`mailto:${COMPANY.email}`} className="flex items-center gap-2 hover:text-[#00D1B2] transition-colors">
               <Mail size={14} />
               <span>{COMPANY.email}</span>
@@ -51,7 +55,7 @@ export default function Header() {
             <img
               src="/Logo.png"
               alt="JYOSI Pharmaceuticals"
-              className="h-12 sm:h-16 lg:h-[80px] w-auto object-contain"
+              className="h-[80px] sm:h-[100px] lg:h-[120px] w-auto object-contain"
             />
           </Link>
 

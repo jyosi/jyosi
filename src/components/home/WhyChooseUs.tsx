@@ -8,7 +8,7 @@ const features = [
   { icon: <Microscope size={26} />, title: "Research & Innovation", description: "Continuous R&D investment for advanced formulations and drug delivery." },
   { icon: <Users size={26} />, title: "Customer Trust", description: "Trusted by thousands of healthcare professionals and pharmacies." },
   { icon: <Award size={26} />, title: "ISO Certified", description: "ISO 9001:2015 certified ensuring consistent product quality." },
-  { icon: <Truck size={26} />, title: "Pan-India Reach", description: "Extensive distribution ensuring timely availability across India." },
+  { icon: <Truck size={26} />, title: "Global Reach", description: "Extensive distribution ensuring timely availability globally." },
   { icon: <HeartPulse size={26} />, title: "Patient Centric", description: "Affordable, accessible healthcare with patient outcomes as priority." },
 ];
 
