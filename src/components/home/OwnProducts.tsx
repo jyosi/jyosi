@@ -76,7 +76,7 @@ export default function OwnProducts() {
                 </div>
 
                 {/* Product Details - takes 3 columns */}
-                <div className="lg:col-span-3 text-white space-y-6">
+                <div className="lg:col-span-3 text-white space-y-5 sm:space-y-6">
                   <div>
                     <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-medium mb-4">
                       <Star size={12} className="text-[#00D1B2]" />
@@ -85,15 +85,22 @@ export default function OwnProducts() {
                     <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-2">
                       RNA<span className="text-[#00D1B2]">+</span>
                     </h3>
-                    <p className="text-lg text-white/50 font-medium">Injection</p>
+                    <p className="text-lg text-white/50 font-medium">Injection • Capsule • Syrup</p>
                   </div>
 
-                  <p className="text-white/75 leading-relaxed text-lg">
+                  <p className="text-white/75 leading-relaxed text-base sm:text-lg">
                     Methylcobalamin, Pyridoxine HCl & Niacinamide Injection. 
                     For IM/IV Use Only. 1 x 2ml Dispo Pack with sterile disposable syringe and needle.
                   </p>
 
-                  <div className="p-5 rounded-xl bg-white/5 border border-white/10">
+                  {/* Available Forms Highlight */}
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1.5 rounded-full bg-[#00D1B2] text-white text-xs font-bold">💉 RNA+ Injection</span>
+                    <span className="px-3 py-1.5 rounded-full bg-white/15 border border-white/30 text-white text-xs font-bold">💊 RNA+ Capsule</span>
+                    <span className="px-3 py-1.5 rounded-full bg-white/15 border border-white/30 text-white text-xs font-bold">🧴 RNA+ Syrup</span>
+                  </div>
+
+                  <div className="p-4 sm:p-5 rounded-xl bg-white/5 border border-white/10">
                     <p className="text-sm font-semibold text-[#00D1B2] mb-3">Composition (Each 2ml contains):</p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-white/70">
                       <span>• Methylcobalamin IP — 1500mcg</span>
@@ -116,7 +123,7 @@ export default function OwnProducts() {
                   </div>
 
                   <div className="flex flex-wrap gap-4 pt-4">
-                    <Link href="/products/neurology/rna-plus-injection">
+                    <Link href="/products/rna-plus">
                       <Button variant="accent" size="lg" className="group">
                         View Full Details
                         <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
@@ -144,25 +151,31 @@ export default function OwnProducts() {
             <div className="p-5 sm:p-8 md:p-12 lg:p-16">
               <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 items-center">
                 {/* Product Details (left side) - 3 columns */}
-                <div className="lg:col-span-3 space-y-6 order-2 lg:order-1">
+                <div className="lg:col-span-3 space-y-5 sm:space-y-6 order-2 lg:order-1">
                   <div>
                     <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#DC2626]/10 border border-[#DC2626]/20 text-xs font-semibold text-[#DC2626] mb-4">
                       <Star size={12} />
                       Nutrition | Own Product
                     </div>
-                    <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0A2540] mb-2">
+                    <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0A2540] mb-2">
                       JYSPRO-DF
                     </h3>
-                    <p className="text-xl text-[#DC2626] font-semibold italic">Cardamom Flavour</p>
-                    <p className="text-gray-500 mt-1 text-lg">Complete, Balanced Nutrition</p>
+                    <p className="text-lg sm:text-xl text-[#DC2626] font-semibold italic">Cardamom Flavour</p>
+                    <p className="text-gray-500 mt-1 text-base sm:text-lg">Complete, Balanced Nutrition</p>
                   </div>
 
-                  <p className="text-gray-600 leading-relaxed text-lg">
+                  {/* Sugar Free Highlight */}
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1.5 rounded-full bg-[#DC2626] text-white text-xs font-bold">🥛 Cardamom Flavour</span>
+                    <span className="px-3 py-1.5 rounded-full bg-green-600 text-white text-xs font-bold animate-pulse">🍃 Sugar Free Also Available</span>
+                  </div>
+
+                  <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
                     Premium protein supplement by JYOSI Pharmaceuticals. An everyday nutritional 
                     supplement with delicious cardamom flavour. 200g pack for complete balanced nutrition.
                   </p>
 
-                  <div className="p-5 rounded-xl bg-[#F6F8FB] border border-gray-100">
+                  <div className="p-4 sm:p-5 rounded-xl bg-[#F6F8FB] border border-gray-100">
                     <p className="text-sm font-bold text-[#0A2540] mb-3">Protein Supplement For:</p>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                       {["Growing Children", "Body Building", "Convalescence", "Trauma", "Pregnancy", "Stress", "Old Age"].map((item) => (
