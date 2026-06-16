@@ -94,10 +94,22 @@ export default function OwnProducts() {
                   </p>
 
                   {/* Available Forms Highlight */}
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1.5 rounded-full bg-[#00D1B2] text-white text-xs font-bold">💉 RNA+ Injection</span>
-                    <span className="px-3 py-1.5 rounded-full bg-white/15 border border-white/30 text-white text-xs font-bold">💊 RNA+ Capsule</span>
-                    <span className="px-3 py-1.5 rounded-full bg-white/15 border border-white/30 text-white text-xs font-bold">🧴 RNA+ Syrup</span>
+                  <div className="p-4 sm:p-5 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-sm">
+                    <p className="text-xs font-semibold text-[#00D1B2] uppercase tracking-wider mb-3">Also Available As:</p>
+                    <div className="grid grid-cols-3 gap-2 sm:gap-3">
+                      <div className="text-center p-3 rounded-xl bg-[#00D1B2] text-white shadow-lg shadow-[#00D1B2]/30">
+                        <p className="text-lg sm:text-2xl mb-1">💉</p>
+                        <p className="text-[10px] sm:text-xs font-bold">RNA+ Injection</p>
+                      </div>
+                      <div className="text-center p-3 rounded-xl bg-white/20 border-2 border-[#00D1B2] text-white">
+                        <p className="text-lg sm:text-2xl mb-1">💊</p>
+                        <p className="text-[10px] sm:text-xs font-bold">RNA+ Capsule</p>
+                      </div>
+                      <div className="text-center p-3 rounded-xl bg-white/20 border-2 border-[#00D1B2] text-white">
+                        <p className="text-lg sm:text-2xl mb-1">🧴</p>
+                        <p className="text-[10px] sm:text-xs font-bold">RNA+ Syrup</p>
+                      </div>
+                    </div>
                   </div>
 
                   <div className="p-4 sm:p-5 rounded-xl bg-white/5 border border-white/10">
@@ -165,9 +177,25 @@ export default function OwnProducts() {
                   </div>
 
                   {/* Sugar Free Highlight */}
+                  <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-200 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-20 h-20 bg-green-200/30 rounded-full -translate-y-1/2 translate-x-1/2" />
+                    <div className="relative flex flex-col sm:flex-row items-start sm:items-center gap-3">
+                      <div className="flex items-center gap-2">
+                        <span className="text-2xl sm:text-3xl">🍃</span>
+                        <div>
+                          <p className="text-sm sm:text-base font-bold text-green-800">Sugar Free Also Available!</p>
+                          <p className="text-xs text-green-600">Diabetic-friendly protein supplement</p>
+                        </div>
+                      </div>
+                      <div className="sm:ml-auto px-3 py-1 rounded-full bg-green-600 text-white text-[10px] sm:text-xs font-bold animate-bounce">
+                        NEW
+                      </div>
+                    </div>
+                  </div>
+
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1.5 rounded-full bg-[#DC2626] text-white text-xs font-bold">🥛 Cardamom Flavour</span>
-                    <span className="px-3 py-1.5 rounded-full bg-green-600 text-white text-xs font-bold animate-pulse">🍃 Sugar Free Also Available</span>
+                    <span className="px-4 py-2 rounded-full bg-[#DC2626] text-white text-xs font-bold shadow-lg shadow-[#DC2626]/20">🥛 Cardamom Flavour</span>
+                    <span className="px-4 py-2 rounded-full bg-[#DC2626]/10 border border-[#DC2626]/30 text-[#DC2626] text-xs font-bold">200g Jar</span>
                   </div>
 
                   <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
